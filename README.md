@@ -11,5 +11,5 @@ let's say that we want to find all the movies of a Person which rol is "director
 One Rol has many Actormovie.
 ![image](https://user-images.githubusercontent.com/44151017/196314045-fe2e7c15-c445-4c9c-ae92-62b7edf04489.png)
 
-The models are defined in the folder "/src/models" and the queries are defined in the main folder, file Queries.js.
+The models are defined in the folder "/src/models" and the queries are defined in the main folder, file Queries.js. The relations are in the file db.js
 I didn't include the Raw Queries. 
