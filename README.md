@@ -6,6 +6,7 @@ The relation between them is:
 A Person has many Movies, and a Movie has many Person. The issue here is when we try to write a query in sequelize. 
 (https://sequelize.org/docs/v6/advanced-association-concepts/advanced-many-to-many/#using-one-to-many-relationships-instead)
 Therefore I used https://sequelize.org/docs/v6/advanced-association-concepts/advanced-many-to-many/#using-one-to-many-relationships-instead to relate
-Person, Movie and Actormovie.
+Person, Movie and Actormovie. This way of relating the models allows me to write queries using operators like "and" "or" in the middle table Actormovie. For instance,
+let's say that we want to find all the movies of a Person which rol is "director", we use the [Op] operator from squelize in order to set that condition. 
 One Rol has many Actormovie.
 I didn't include the Raw Queries. 
