@@ -7,7 +7,10 @@ const getMovieById = async (id)=>{
         where : {
             id
         },
-        include : Person
+        include : {
+            model: Actormovie,
+            include : Person
+        }
     });
     return movies;
 };
@@ -17,7 +20,10 @@ const getPersonById = async (id)=>{
         where : {
             id
         },
-        include : Movie
+        include : {
+            model : Actormovie,
+            include : Movie
+        }
     });
     return people;
 };
