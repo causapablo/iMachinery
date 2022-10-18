@@ -9,4 +9,5 @@ Therefore I used https://sequelize.org/docs/v6/advanced-association-concepts/adv
 Person, Movie and Actormovie. This way of relating the models allows me to write queries using operators like "and" "or" in the middle table Actormovie. For instance,
 let's say that we want to find all the movies of a Person which rol is "director", we use the [Op] operator from squelize in order to set that condition. 
 One Rol has many Actormovie.
+The models are defined in the folder "/src/models" and the queries are defined in the main folder, file Queries.js.
 I didn't include the Raw Queries. 
