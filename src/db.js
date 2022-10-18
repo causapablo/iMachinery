@@ -36,6 +36,11 @@ const { Movie, Person, Actormovie, Rol } = sequelize.models;
 //Many-to-Many between Person and Movie
 Person.belongsToMany(Movie, { through: { model: Actormovie, unique: false } });
 Movie.belongsToMany(Person, { through: { model: Actormovie, unique: false } });
+// The Super Many-to-Many relationship
+Person.hasMany(Actormovie);
+Actormovie.belongsTo(Person);
+Movie.hasMany(Actormovie);
+Actormovie.belongsTo(Movie);
 //One-to-Many between Actormovies and Rol.
 Rol.hasMany(Actormovie);
 Actormovie.belongsTo(Rol);
